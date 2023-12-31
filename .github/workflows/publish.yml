@@ -14,5 +14,5 @@ jobs:
           node-version: 18
           cache: "npm"
       - run: npm install --no-optional --no-audit --no-fund
-      - run: npm lint
-      - run: npm build
+      - run: npm run lint
+      - run: npm run build
