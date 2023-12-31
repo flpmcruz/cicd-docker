@@ -5,27 +5,6 @@ on:
     branches: [main]
 
 jobs:
-  # avoid_reduncy:
-  #   runs-on: ubuntu-18.04
-  #   steps:
-  #     - name: Cancel Previous Redundant Builds
-  #       uses: styfle/cancel-workflow-action@0.9.1
-  #       with:
-  #         access_token: ${{ github.token }}
-
-  # lint:
-  #   runs-on: ubuntu-18.04
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-node@v4
-  #       with:
-  #         cache: "npm"
-  #         node-version: 20.9.0
-  #     - name: Install dependencies
-  #       run: npm install --omit=optional --no-audit --no-fund
-  #     - name: Lint
-  #       run: npm run lint
-
   mijob:
     runs-on: ubuntu-18.04
     steps:
